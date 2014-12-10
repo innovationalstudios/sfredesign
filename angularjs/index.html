@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <link rel="stylesheet" href="http://content.simplyfun.com/new-website/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <script src="http://content.simplyfun.com/new-website/js/bootstrap.min.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="container">
+  <div class="starter-template">
+
+    <div ng-controller="DeathrayMenuController">
+      <button ng-click="toggleMenu()">Toggle Menu</button>
+      <ul ng-show="menuState.show">
+        <li ng-click="stun()">Stun</li>
+        <li ng-click="disintegrate()">Disintegrate</li>
+        <li ng-click="erase()">Erase from history</li>
+      </ul>
+    </div>
+    <iframe src="http://content.simplyfun.com/assets/newsletter/09092014/" width="695" height="800"></iframe>
+  </div>
+</div>
+</body>
+</html>

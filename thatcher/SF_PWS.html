@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:asp="asp" xmlns:uc1="uc1" xmlns:cc1="cc1">
+<xsl:output method="xml" indent="yes" omit-xml-declaration="yes" />
+<xsl:template match="/">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+<!-- Fixed navbar -->
+<div role="navigation" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">Project name</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+      	<uc1:menu2 id='ucMenu2' runat='server' />
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+<link rel="stylesheet" href="http://content.simplyfun.com/new-website/css/bootstrap.min.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="http://content.simplyfun.com/new-website/js/bootstrap.min.js"></script>
+</xsl:template>
+</xsl:stylesheet>
